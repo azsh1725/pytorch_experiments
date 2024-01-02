@@ -2,3 +2,4 @@ numpy==1.24.4
 torch==2.0.0
 torchvision==0.15.1
 timm==0.9.0
+transformers==4.25.1

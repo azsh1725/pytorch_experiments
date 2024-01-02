@@ -7,6 +7,6 @@ def fn(x, y):
     return a + b
 
 
-new_fn = torch.compile(fn, backend="inductor", mode="max-autotune")
+new_fn = torch.compile(fn, backend="inductor")
 input_tensor = torch.randn(10000).to(device="cuda:0")
 a = new_fn(input_tensor, input_tensor)
